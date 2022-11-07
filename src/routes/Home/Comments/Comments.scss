@@ -1,0 +1,221 @@
+@import 'asset/style/variable.scss';
+
+.home-comments {
+  .comments-control {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    .comments-switch {
+      margin-right: 30px;
+      display: flex;
+      align-items: center;
+      svg {
+        margin: 0 17px 0 5px;
+      }
+    }
+    .comments-radio {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      .ant-radio-wrapper {
+        font-size: 14px;
+      }
+      &.disabled {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .add-comment{
+    background-color: white;
+    padding-left: 26px;
+    padding-top: 25px;
+    .ant-avatar {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  .editor{
+    display: inline;
+    .add-comment-input{
+      width:80%;
+      height:44px;
+      font-size:14px;
+      border: #d9d9d9 1px solid;
+      border-radius: 4px;
+      overflow-y: hidden;
+      resize: none;
+      font-family: Roboto;
+      padding-top: 10px;
+    }
+    .comment-button {
+      font-family: Roboto;
+      font-style: normal;
+      border-radius: 4px;
+      background: #FFFFFF;
+      color: #FF5A5A;
+      border: 2px solid #FF5A5A;
+      box-sizing: border-box;
+      border-radius: 34px;
+      width: 127px;
+      height: 36px;
+      float:right;
+      margin-right: 25px;
+      margin-top: 4px;
+      text-shadow: none;
+    }
+    .comment-button-disabled {
+      font-family: Roboto;
+      font-style: normal;
+      border-radius: 4px;
+      box-sizing: border-box;
+      border-radius: 34px;
+      width: 127px;
+      height: 36px;
+      float:right;
+      margin-right: 25px;
+      margin-top: 4px;
+      text-shadow: none;
+    }
+  }
+
+  .comments-header {
+    padding: 50px 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #242424;
+    text-align: center;
+    .title {
+      display: inline-block;
+      margin: 0 auto;
+      font-family: Roboto;
+      color: #242424;
+      font-size: 20px;
+      word-wrap:break-word;
+    }
+    .navigation-back {
+      position: absolute;
+      left: 20pt;
+      cursor: pointer;
+    }
+  }
+
+  .no-comment {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    color:#242424
+  }
+  .no-comment-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom:36pt;
+    margin-top:56pt;
+  }
+
+  .comments-list {
+    padding: 0px 15px 40px 25px;
+    border-top: none;
+    .ant-comment-inner {
+      padding: 0 0 8px 0;
+    }
+    .ant-avatar {
+      width: 36px;
+      height: 36px;
+    }
+    .ant-comment-content-author {
+      align-items: baseline;
+    }
+    .ant-comment-content-author-name {
+      color: #242424;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      span.author {
+        color: #FF5A5A;
+      }
+    }
+    .ant-comment-content-author-time {
+      color: #9B9B9B;
+      font-size: 11px;
+      line-height: 14px;
+    }
+    .ant-comment-content-detail {
+      color: #656565;
+      font-size: 14px;
+      line-height: 20px;
+      padding-bottom: 12px;
+      max-width: 80%;
+      display: inline-block;
+    }
+    .ant-comment-content-detail::after {
+      content:'';
+      border-bottom: 1px solid #d9d9d9;
+      position: absolute;
+      left: 0;
+      max-width: 81%;
+      right: 0;
+      top: 100%;
+      padding-bottom: 4pt;
+    }
+    .author-label {
+      margin-left:12px;
+      margin-bottom: -6px;
+    }
+    .ant-comment-nested {
+      padding-top: 12pt;
+      .ant-comment-content-detail {
+        width: 100%;
+        display: inline;
+      }
+      .ant-avatar {
+        width: 28px;
+        height: 28px;
+      }
+    }
+    .ant-comment-actions {
+      margin-top: 0;
+      width: 108px;
+      float: right;
+      li svg {
+        width: 18px;
+        height: 18px;
+      }
+      li img {
+        margin-top: -8pt;
+        width: 18px;
+        height: 18px;
+
+        &.liked {
+          content: url(../../../asset/svg/liked-red.svg);
+        }
+      }
+    }
+    .replies-toggle {
+      display: flex;
+      align-items: center;
+      color: #017EF9;
+      font-size: 12px;
+      line-height: 12px;
+      margin: 0 0 12px 38px;
+      font-family: Roboto;
+      font-weight: 500;
+      cursor: pointer;
+      svg {
+        margin-right: 6px;
+      }
+      &.collapse {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

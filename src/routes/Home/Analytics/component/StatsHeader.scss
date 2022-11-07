@@ -1,0 +1,50 @@
+.stats-header {
+  height: 156px;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+
+  .stats-header-item {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    border: solid 1px #f2f2f2;
+    margin-right: 10px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg {
+      color: #FF5A5A;
+    }
+
+    .stats-header-item-num {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: 12px;
+
+      span {
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 4px;
+      }
+      .number {
+        color: #242424;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 33px;
+      }
+    }
+  }
+
+  .desc {
+    flex-grow: 1;
+  }
+}

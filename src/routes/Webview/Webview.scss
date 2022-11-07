@@ -1,0 +1,189 @@
+@import 'asset/style/variable.scss';
+
+.Webview {
+    padding: 0 8px;
+    word-break: break-word;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+
+    .title {
+        margin: 24px 0 0 0;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 36px;
+    }
+
+    .cover {
+        margin-bottom: 15px;
+    }
+
+    img {
+        width: 100%;
+    }
+    a {
+      text-decoration: underline;
+    }
+
+    .content {
+        > p, > div, h2, h3, figure, blockquote, div[data-block=true] {
+            margin: 20px 0 0;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        a {
+            text-decoration: underline;
+        }
+        blockquote {
+            font-style: italic;
+            border-left: 2px solid #FF5A5A;
+            position: relative;
+            padding: 16px 16px 16px 30px;
+            background-color: #F5F5F5;
+            &::before {
+                content: "\"";
+                font-size: 2em;
+                color: #FF5A5A;
+                position: absolute;
+                left: 4px;
+                top: -4px;
+            }
+        }
+        .img-wrapper {
+            div {
+                margin-top: 6px;
+                > span {
+                    font-size: 14px;
+                    line-height: 20px;
+                    &.img-caption {
+                        color: rgba(0, 0, 0, 0.6);
+                        margin-right: 5px;
+                    }
+                    &.img-credit {
+                        color: #9B9B9B;
+                    }
+                }
+            }
+        }
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        height: 40px;
+    }
+
+    .avatar {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center center;
+        margin-right: 5px;
+    }
+
+    .date {
+        font-size: 12px;
+    }
+
+    a.og-body {
+        color: #000;
+        display: block;
+        text-decoration: none;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        padding-bottom: 10px;
+
+        img {
+            border: 1px solid #A3A3A3;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        h4 {
+            margin-bottom: 0;
+            padding: 10px 10px 0 10px;
+            font-weight: bold;
+        }
+
+        .og-desc {
+            color: #666;
+            font-size: 15px;
+            padding: 0 10px;
+        }
+
+        .og-site {
+            color: $color-link;
+            font-size: 15px;
+            padding: 0 10px;
+        }
+    }
+
+    /* Media footer */
+    .media-promotion {
+        p {
+          margin-top: 24px;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 500;
+        }
+        span {
+          color: #ec3e36;
+        }
+    }
+
+    .media-info-card {
+        width: 100%;
+        display: flex;
+        justify-content: stretch;
+        padding: 20px 0;
+        margin-top: 24px;
+        border-top: 1px solid #E3E3E3;
+        .mediaAvatar {
+            position: relative;
+            height: 36px;
+            img {
+              display: block;
+              height: 36px;
+              width: 36px;
+              border-radius: 36px;
+              margin-right: 8px;
+            }
+        }
+        .media-info {
+            flex-grow: 1;
+            padding: 0 12px;
+            .nickname {
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 500;
+                margin-bottom: 6px;
+            }
+            .desc {
+                font-size: 14px;
+                line-height: 20px;
+                max-height: 80px;
+                overflow: hidden;
+                font-weight: 400;
+            }
+        }
+        .follow-btn {
+            font-size: 14px;
+            color: #017ef9;
+            line-height: 20px;
+            font-weight: 500;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            height: 32px;
+            flex-shrink: 0;
+            text-align: right;
+            cursor: pointer;
+        }
+    }
+}

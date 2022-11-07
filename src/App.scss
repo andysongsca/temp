@@ -1,0 +1,63 @@
+@import '~antd/dist/antd.css';
+@import 'asset/style/variable.scss';
+
+html {
+    scroll-behavior: smooth;
+}
+
+.App {
+  height: 100%;
+
+}
+
+#root {
+  height: 100%;
+}
+
+.mp-light-body {
+    background-color: #f9f9f9;
+}
+
+.Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 100px;
+    color: #FFF;
+    border: none;
+    line-height: 30px;
+    background-color: $color-main;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &[disabled] {
+        background-color: #f1f1f1;
+        color: #bdbdbd;
+        pointer-events: none;
+    }
+
+    &.Button-Light {
+        color: #242424;
+        background-color: transparent;
+        border: 2px solid #f1f1f1;
+    }
+}
+
+.Card {
+    box-sizing: border-box;
+    background-color: #FFF;
+    border: 1px solid #f1f1f1;
+
+    header {
+        border-bottom: 1px solid #f1f1f1;
+        font-size: 20px;
+        font-weight: $font-weight-semibold;
+        text-align: center;
+    }
+}

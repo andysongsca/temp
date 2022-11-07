@@ -1,0 +1,252 @@
+@import 'asset/style/variable.scss';
+
+.Post, .Share {
+    color: $font-color-light;
+
+    .post-cover {
+        display: flex;
+        align-items: center;
+        margin-bottom: 13px;
+        padding: 18px;
+    }
+
+    .upload-cover {
+        position: relative;
+        display: block;
+        width: 240px;
+        height: 140px;
+        background-image: url('../../../asset/img/post-upload-cover.png');
+        background-size: cover;
+        overflow: hidden;
+
+        &:hover {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                pointer-events: none;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -13px;
+                margin-left: -13px;
+                width: 26px;
+                height: 26px;
+                background: url('../../../asset/img/arrow-up.png');
+                background-size: cover;
+                pointer-events: none;
+            }
+        }
+
+        .ant-upload {
+            display: block !important;
+            width: 100%;
+            height: 100%;
+            -webkit-appearance: none;
+            outline: none;
+        }
+    }
+
+    .upload-cover-illustrate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15px;
+        color: $font-color-light;
+
+        > div {
+            margin-bottom: 9px;
+        }
+
+        > span {
+            font-size: 12px;
+        }
+    }
+
+    .post-container {
+        padding: 30px 50px;
+    }
+
+    .post-message {
+      padding: 30px 50px 50px;
+      box-sizing: border-box;
+      background-color: #fff;
+      margin-top: 20px;
+      border: 1px solid #f1f1f1;
+
+      .message-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        color: #242424;
+      }
+  
+      .message-input-area {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.31px;
+        color: #BDBDBD;
+        margin-top: 20px;
+        .ant-input {
+          background-color: #f9f9f9;
+        }
+      }
+  
+      .message-footer {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #9B9B9B;
+      }
+    }
+
+    .title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: 13px;
+      textarea {
+        padding: 0;
+        flex-grow: 1;
+        border: none;
+        font-size: 25px;
+        line-height: 29px;
+        &:focus::placeholder {
+          color: #bdc1c9;
+        }
+        &::placeholder {
+          color: #9197a3;
+          font-size: 20px;
+          line-height: 29px;
+        }
+        &:focus {
+          box-shadow: unset;
+        }
+        resize: none;
+      }
+      .title-count {
+        margin: 0 10px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #9b9b9b;
+      }
+      .notice-holder.ant-tooltip-open {
+        margin-left: 10px;
+      }
+      > svg {
+        cursor: pointer;
+      }
+    }
+
+    .Editor-Content {
+      max-height: calc(100vh - 360px);
+      @media screen and (max-height: 860px) {
+          max-height: 500px;
+      }
+    }
+
+    .last-saved-time {
+      text-align: right;
+      color: #9b9b9b;
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    .scheduled-time {
+      text-align: left;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 500;
+      margin-top: 5px;
+    }
+
+    .editor-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 36px auto 20px;
+        width: 570px;
+
+        .Button {
+            height: 40px;
+            padding: 0 24px;
+            font-size: 16px;
+        }
+        
+        .disable-publish-tooltip {
+          margin-left: -55px;
+        }
+    }
+}
+
+.comfirm-leave-modal {
+  .ant-modal {
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.comfirm-leave {
+  height: 160px;
+  text-align: center;
+  div {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    padding-top: 40px;
+  }
+  button {
+    border: solid 1px #c8c8c8;
+    background-color: inherit;
+    width: 145px;
+    height: 40px;
+    margin: 40px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .save-as-draft {
+    background-color: inherit;
+    border: 1px solid $color-main;
+    color: $color-main;
+  }
+}
+
+.Share {
+  .share-container {
+    .title {
+      textarea {
+        background-color: #f9f9f9;
+        font-size: 18px;
+        padding: 20px 20px 40px 20px;
+
+        &::placeholder {
+          font-size: 18px;
+          line-height: 27px;
+        }      
+      }
+
+      .title-count {
+        bottom: 25px;
+        right: 20px;
+        color: #9197a3;
+      }
+    }
+  }
+}

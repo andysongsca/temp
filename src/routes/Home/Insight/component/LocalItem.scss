@@ -1,0 +1,119 @@
+@import 'asset/style/variable.scss';
+
+.info-item {
+  display: flex;
+  height: 167px;
+  width: 424px;
+  border: solid 1px #f2f2f2;
+  margin-top: 20px;
+  margin-right: 20px;
+  align-items: center;
+  border-radius: 4px;
+
+  &:hover {
+    border-radius: 4px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+
+  .info-item-content {
+    display: flex;
+    flex-direction: row;
+
+    .info-item-left {
+      margin: 21px 0px 23px 18px;
+      position: relative;
+      
+      img {
+        max-height: 123px;
+        max-width: 123px;
+        height: 123px;
+        width: 123px;
+        align-items: center;
+      }
+
+      .info-source {
+        font-weight: 600;
+        color: white;
+        background-color: #242424;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 12px;
+        padding: 0 4px;
+        height: 19px;
+        max-width: 123px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .info-item-right {
+      margin: 21px 0px 23px 14px;
+
+      .info-item-line {
+        display: flex;
+        align-items: center;
+        span {
+          font-size: 11px;
+          font-weight: 500;
+          color: #9B9B9B;
+        }
+
+        .ant-tag {
+          background-color: transparent;
+          margin-left: 0;
+          height: 21px;
+          padding-bottom: 10px;
+          &.orange-tag {
+            color:#FF9900;
+            border-color:#FFEDD2;
+            background-color:#FFEDD2;
+          }
+          &.red-tag {
+            color: #F14646;
+            border-color: #FFCECE;
+            background-color: #FFCECE;
+          }
+          &.green-tag {
+            color:#60B304;
+            border-color:#DDF3C4;;
+            background-color:#DDF3C4;
+          }
+          &.purple-tag {
+            color: #8C98FF;
+            border-color: #DBDFFF;
+            background-color: #DBDFFF;
+          }
+          &.blue-tag {
+            color: #2B96FF;
+            border-color: #CAE5FF;
+            background-color: #CAE5FF;
+          }
+        }
+
+        .info-item-location-icon {
+          margin-left: 10px;
+          margin-right: 4px;
+          height: 10px;
+          margin-bottom: 2px;
+        }
+      }
+
+      h3 {
+        font-size: 16px;
+        max-height: 80px;
+        width: 265px;
+        overflow: hidden;
+        margin-top: 10px;
+        line-height: 1.25;
+        margin-bottom: 6px;
+        padding-right: 1rem;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}

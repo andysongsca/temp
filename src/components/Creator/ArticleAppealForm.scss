@@ -1,0 +1,81 @@
+.appeal-modal {
+  background: #FFFFFF;
+  border-radius: 4px;
+  .appeal-form-div {
+    padding-left: 56px;
+    padding-right: 61px;
+    padding-top: 40px;
+    .title {
+      font-family: Roboto;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .reason-item {
+      padding-top:28px;
+      display: block;
+      label {
+        font-weight: bold;
+      }
+    }
+    .ant-form .reason-text {
+      height:150px;
+      width: 100%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;  
+      margin-top:16px;
+      textarea {
+        height: 100%;
+      }
+    }
+    .button-footer {
+      text-align: center;
+      .submit-button {
+        margin-left: 52px;
+      }
+
+      button {
+        padding: 5px 28px;
+
+        position: static;
+        width: 107px;
+        height: 36px;
+        left: 0px;
+        top: 0px;
+
+        border-radius: 38px;
+      }
+    }
+  
+    .appeal-error {
+      color: red
+    }
+  }
+
+  .appeal-submitted-div {
+    h3 {
+      padding-left: 24px;
+    }
+    div {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 24px;
+      padding-right: 42px;
+    }
+    .ok-button {
+      padding-top: 20px;
+      text-align: right;
+
+      button {
+        border-radius: 38px;
+        width: 78px;
+        height: 36px; 
+      }
+    }
+  }
+}

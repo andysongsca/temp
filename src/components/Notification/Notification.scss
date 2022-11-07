@@ -1,0 +1,49 @@
+#notification {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.Notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #F0F3F4;
+    transform: translateY(-100%);
+    transition: 0.3s;
+    animation: notification-show 0.3s forwards;
+}
+
+.Notification-success {
+    color: #ffffff;
+    background-color: #4A90E2;
+}
+
+.Notification-error {
+    color: #ffffff;
+    background-color: #FF7770;
+}
+
+.Notification-hidding {
+    animation: notification-hide 0.3s forwards;;
+}
+
+@-webkit-keyframes notification-show {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes notification-hide {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}

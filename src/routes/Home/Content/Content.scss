@@ -1,0 +1,68 @@
+.ContentManagement {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .ant-row {
+    background-color: #ffffff;
+    padding: 26px 24px;
+  }
+  .ant-input-group-wrapper {
+    width: 300px;
+    float: right;
+    margin-top: 5px;
+  }
+  .ant-input-affix-wrapper {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    .ant-input {
+      font-size: 14px;
+    }
+  }
+  .ant-input-search>.ant-input-group>.ant-input-group-addon {
+    padding-left: 15px;
+    background: none;
+  }
+  .ant-input-search>.ant-input-group>.ant-input-group-addon .ant-input-search-button {
+    border-radius: 100px;
+  }
+  h2 {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .ant-tabs-extra-content {
+    margin-right: 24px;
+  }
+  .ant-tabs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .ant-tabs-bar {
+    border-bottom: 0px;
+    background-color: white;
+  }
+  .ant-tabs-ink-bar {
+    bottom: unset;
+  }
+  .ant-tabs-content {
+    height: 100%;
+  }
+  .ant-tabs-tabpane {
+    height: 100%;
+    background-color: white;
+  }
+  .management-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-search-textbox {
+    padding-top: 36px;
+    padding-left: 24px;
+    padding-right: 24px;
+    float: inherit;
+    width: 100%;
+  }
+}

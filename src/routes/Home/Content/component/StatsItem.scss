@@ -1,0 +1,42 @@
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  width: 94px;
+  align-items: center;
+  margin: auto 6px;
+  height: 70px;
+  
+  >h1 {
+      font-size: 24px;
+      margin-bottom: 0;
+      font-weight: 400;
+      display: inline-block;
+  }
+
+  .score-area{
+    display:inline-block;
+    height: 60px;
+    font-weight: 100;
+  }
+  .score{
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+
+  .na-tooltip-area{
+    display: inline-block;
+  }
+  
+  .title-area {
+      display: flex;
+      align-items: center;
+      color: #656565;
+      font-size: 12px;
+      svg {
+        width: 12px;
+        margin-right: 3pt;
+      }
+    }
+}

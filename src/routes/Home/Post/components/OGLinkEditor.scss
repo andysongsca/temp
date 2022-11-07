@@ -1,0 +1,78 @@
+@import 'asset/style/variable.scss';
+
+.og-link-editor {
+  background-color: #f9f9f9;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding-top: 20px;
+  position: relative;
+  overflow: visible;
+
+  textarea {
+    background-color: #f9f9f9;
+    font-size: 18px;
+    padding: 0 20px;
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    width: 100%;
+    resize: none;
+
+    &::placeholder {
+      color: #9197a3;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  
+    &:focus::placeholder {
+      color: #bdc1c9;
+    }
+
+    &:focus {
+      box-shadow: unset;
+    }
+  }
+
+  &.validated {
+    textarea {
+      color: $color-link;
+      text-decoration: underline;
+    }
+  }
+
+  &.error {
+    border-color: $color-main;
+  }
+
+  .error-msg {
+    color: $color-main;
+    position: relative;
+    top: 30px;
+  }
+
+  .preview-container {
+    margin: 40px auto;
+    width: 640px;
+    min-height: 100px;
+
+    img {
+      width: 100%;
+      height: 400px;
+    }
+
+    .preview-desc {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    &.no-image {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+.og-link-tooltip {
+  max-width: 400px;
+}

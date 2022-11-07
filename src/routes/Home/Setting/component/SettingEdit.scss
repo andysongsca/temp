@@ -1,0 +1,225 @@
+@import 'asset/style/variable.scss';
+
+.setting-edit {
+  background-color: white;
+  padding: 50px 90px;
+  position: relative;
+
+  .form-setting-edit {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px auto 100px;
+  }
+  .form-item {
+    width: 100%;
+    margin-bottom: 20px;
+
+    label {
+      color: #000;
+      font-size: 16px;
+      font-weight: $font-weight-semibold;
+    }
+
+    .form-tooltip {
+      margin-left: 8px;
+      padding-top: 4px;
+    }
+
+    .form-div-radio {
+      padding-top: 10px;
+
+      .send-button {
+        padding-top: 6px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .form-item-hidden {
+    height: 0px;
+  }
+
+  .ant-form-vertical .ant-form-item-label{
+    width:100%;
+  }
+
+  .form-item-half {
+    width: 49%;
+  }
+  .form-location {
+    display: inline-block;
+    z-index: 2;
+    flex-direction: unset;
+    .location-tooltip {
+      margin-left: 8px;
+      padding-top: 4px;
+    }
+    .div-location {
+      margin-top: 30px;
+    }
+  }
+
+  .input {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+
+    &.ant-input-disabled{
+      background-color: #f9f9f9;
+      color:black;
+    }
+  }
+
+  .tagline {
+    height: 160px;
+
+    .tagline-radio {
+      padding-right: 50px;
+    }
+  }
+
+  .rss {
+    height: 150px;
+  }
+
+  .textarea {
+    padding: 10px 10px;
+    width: 100%;
+    height: 100px;
+    margin-top: 27px;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    border: none;
+    resize: none;
+  }
+
+  .privacy-policy {
+    display: flex;
+    width: 100%;
+    margin-bottom: 60px;
+    font-size: 12px;
+    color: #000;
+
+    .agree-radio {
+      width: 12px;
+      height: 12px;
+      margin-right: 12px;
+      border: 1px solid #4a90e2;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &.agree {
+        &::before {
+          content: '';
+          display: block;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          background-color: #4a90e2;
+        }
+      }
+    }
+
+    a {
+      color: #4a90e2;
+    }
+  }
+
+  .submit-button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .ant-btn {
+      margin: 0 30px;
+      width: 100px;
+      height: 34px;
+    }
+    [disabled] {
+      background-color: #c8c8c8;
+      color: #656565;
+    }
+  }
+
+    // location selector
+    .form-location {
+      .location-item, .selected-box .location {
+          display: flex;
+          align-items: center;
+          height: 40px;
+          text-align: center;
+          padding: 0 10px;
+          margin-top:0;
+          border-radius: 40px;
+          span {
+              font-size: 16px;
+          }
+      }
+      .default-location {
+          top: 0;
+          left: 0;
+          background-color: #f7f7f7;
+      }
+      .ant-form-item-explain {
+        margin-top: 3px;
+      }
+      .default-location + .location-select-wrapper {
+          position: relative;
+          left: 156px;
+      }
+      .location-select-wrapper {
+          margin-bottom: 5px;
+          .ant-form-item-control-input {
+              width: 100%;
+          }
+      }
+      .location-select {
+          position: absolute;
+          top: 0;
+          padding: 0;
+          min-width: 200px;
+          width: calc(100% - 50px);
+          height: 45px;
+
+          .search-box {
+              .search-result-parent {
+                  display: none;
+                  &.not-empty {
+                      display: block;
+                      z-index: 2;
+                      background-color: #ffffff;
+                      margin-top: 2px;
+                  }
+              }
+          }
+
+          .location span, .ant-input {
+              font-size: 16px;
+          }
+          .selected-box .location {
+              color: black;
+              background-color:  #ffffff;
+              button.change-btn {
+                  color:  black;
+                  font-size: 16px;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  border: none;
+                  width: auto;
+                  padding: 0;
+                  margin-left: 10px;
+              }
+          }
+      }
+      .hint {
+          padding-top: 40px;
+          width: 100%;
+          margin-top: 10px;
+      }
+  }
+}

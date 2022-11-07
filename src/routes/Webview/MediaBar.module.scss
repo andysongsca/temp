@@ -1,0 +1,40 @@
+.media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.mediaAccount {
+    display: flex;
+    align-items: center;
+}
+
+.mediaName {
+    margin-bottom: 1px;;
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+    letter-spacing: var(--letter-spacing-sm);
+    line-height: 1.43;
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mediaFollow {
+    color: var(--follow-btn-color);
+    background-color: transparent;
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+    letter-spacing: var(--letter-spacing-sm);
+    line-height: 1.43;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica;
+
+    &:global(.following) {
+        color: var(--followed-btn-color);
+    }
+}

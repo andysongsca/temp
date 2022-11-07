@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>page_view</title>
+    <desc>Created with Sketch.</desc>
+    <g id="page_view" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7" transform="translate(2.000000, 4.000000)" fill-rule="nonzero" stroke="currentColor" stroke-width="3">
+            <circle id="Oval" cx="13.9285714" cy="8.35714286" r="8.35714286"></circle>
+            <polyline id="Path-11" stroke-linecap="round" points="16.7142857 28.3386579 21.5339181 22.7923933 27.2056013 27.2940151 35.3124651 16.7142857"></polyline>
+            <path d="M13.9285714,16.7142857 C6.23603384,16.7142857 0,22.9503196 0,30.6428571" id="Path"></path>
+        </g>
+    </g>
+</svg>

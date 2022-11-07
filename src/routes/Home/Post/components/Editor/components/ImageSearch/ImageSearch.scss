@@ -1,0 +1,103 @@
+.ImageSearch {
+  padding: 24px 24px 0 24px;
+
+  display: flex;
+  flex-direction: column;
+  height: 88%;
+
+  .ant-input-search .ant-input-group {
+    .ant-input-affix-wrapper {
+      background-color: #f9f9f9;
+    }
+    .ant-input-affix-wrapper-focused {
+      box-shadow: none;
+      border-right-width: 0px !important;
+      border-color: #d9d9d9;
+    }
+    .ant-input-affix-wrapper:hover {
+      border-color: #d9d9d9;
+      border-right-width: 0px !important;
+    }
+
+    .ant-input-affix-wrapper:not(:last-child) {
+      border-top-left-radius: 37px;
+      border-bottom-left-radius: 37px;
+      border-right-width: 0px !important;
+
+      input {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 36px;
+        padding-left: 5px;
+        background-color: #f9f9f9;
+      }
+    }
+  }
+  .ant-input-group-addon {
+    background-color: transparent;
+
+    .ant-btn {
+      border-width: 1px 1px 1px 0;
+      border-style: solid;
+      border-color: #d9d9d9;
+      height: 44px;
+      border-top-right-radius: 37px !important;
+      border-bottom-right-radius: 37px !important;
+      background-color: #f9f9f9;
+    }
+  }
+
+  .KeywordSuggestions {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+
+    &-wrapper {
+      display: flex;
+      overflow: scroll;
+
+      .ant-tag {
+        background-color: #fff;
+        padding: 8px 12px;
+      }
+      .ant-tag-checkable-checked {
+        background-color: #000;
+      }
+    }
+  }
+
+  .ListImagesItem {
+    position: relative;
+    height: 100%;
+
+    &-next-btn {
+      background: white;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 2px;
+      cursor: pointer;
+    }
+  }
+}
+
+.SourceFilter {
+  display: flex;
+  justify-content: space-between;
+
+  &-text {
+    font-size: 14px;
+  }
+  &-group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.SourceFilterMenu {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+}

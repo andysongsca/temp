@@ -1,0 +1,18 @@
+export const POST_STATUS = {
+  DRAFT: 0,
+  RELEASING: 1,
+  POSTED: 2,
+  DELETED: 3,
+  FAILED: 4,
+  POSTED_DRAFT: 5,
+  SCHEDULED: 8,
+}
+
+export const MEDIA_TYPE_NEWSLETTER = 11
+export const MEDIA_TYPE_CREATOR = 3
+
+export const TYPE_LINK = 'LINK'
+export const TYPE_IMAGE = 'IMAGE'
+export const TYPE_FOLLOWING = 'FOLLOWING_CARD'
+export const TYPE_SOCIAL = 'SOCIAL_CARD'
+export const TYPE_NEWSLETTER_CARD = 'NEWSLETTER_CARD'

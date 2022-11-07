@@ -1,0 +1,40 @@
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  >span {
+    margin-top: 12px;
+  }
+
+  .error {
+    color:#FF5A5A;
+    font-size: 12px;
+    margin-top: 6px;
+    width: 100%;
+    text-align: right;
+  }
+
+  :global(.ant-input-affix-wrapper) {
+    border: none;
+    flex: 1 0 40%;
+  }
+
+  :global(.ant-input) {
+    font-size: 14px;
+    line-height: 38px;
+  }
+
+  :global(.ant-tag) {
+    display: flex;
+    align-items: center;
+    color: #282828;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 12px;
+    height: 40px;
+    border-radius: 24px;
+    border-width: 0;
+    background-color: rgba(36, 36, 36, 0.06);
+  }
+}

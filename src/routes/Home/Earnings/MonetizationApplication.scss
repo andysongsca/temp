@@ -1,0 +1,151 @@
+.monetization {
+  .monetization-header {
+    border-radius: 4px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 126px 0 258px 0px;
+    display: flex;
+    flex-direction: row;
+    font-family: Roboto;
+    font-style: normal;
+    color: #242424;
+
+    .left-panel {
+      width: 419px;
+      margin-left: 120px;
+      margin-right: 65px;
+      background-position: -20px bottom;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 36px;
+      }
+
+      h3 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+      }
+
+      ul {
+        padding-inline-start: 20px;
+
+        li {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      .Button {
+        height: 40px;
+        padding: 0 24px;
+        font-size: 16px;
+        margin-left: 0;
+        margin-top: 36px;
+        margin-bottom: 36px;    
+      }
+    }
+
+    .sep-line-verticle {
+      width: 2px;
+      background-color: #242424;
+    }
+
+    .right-panel {
+      flex-grow: 1;
+      margin: 95px 85px 0px;
+
+      .status-block {
+        
+        .status-counter {
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 37px;
+          text-align: center;
+        }
+
+        .sep-line-horizontal {
+          height: 2px;
+          width: 120px;
+          background-color: #242424;
+          margin: 41px 15px;
+        }
+
+        .status-text {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 15px;
+          text-align: center;
+          display: flex;
+          place-content: center;
+
+          .follower-text {
+            margin: 0px 4px;
+          }
+
+          .follower-icon {
+            align-self: center;
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.monetization-info-modal {
+  .ant-modal-content {
+    padding: 24px;
+    font-family: Roboto;
+    font-style: normal;
+  }
+
+  .ant-modal-body {
+    padding: 0; 
+    
+    .monetization-info-title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    img {
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .ant-modal-footer {
+    padding: 0;
+    border-top: none;
+
+    button {
+      padding: 8px 28px 10px 28px;
+        border-radius: 38px;
+        height: 36px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+  }
+}

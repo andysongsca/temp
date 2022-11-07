@@ -1,0 +1,263 @@
+@import 'asset/style/variable.scss';
+
+.post-item {
+  display: flex;
+  height: 150px;
+  border: solid 1px #f2f2f2;
+  margin-top: 20px;
+  align-items: center;
+  border-radius: 4px;
+
+  .cover {
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px;
+    width: 200px;
+    height: 100%;
+    display: block;
+    margin-left: 0;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    .cover-image {
+      display: block;
+      width: 200px;
+      height: 150px;
+    }
+    .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .location {
+      font-weight: 600;
+      color: #4a4a4a;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      background-color: rgba(255,255,255,0.8);
+      border: 1px solid #C8C8C8;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-size: 12px;
+      line-height: 18px;
+      padding: 0 4px;
+      img {
+        height: 10px;
+        margin-right: 2px;
+      }
+    }
+    .video-overlay{
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 2px;
+      border-radius: 2px;
+      cursor: pointer;
+
+      img {
+        height: 28px;
+        width: 28px;
+        margin-top: 14px;
+        margin-right: 14px;
+      }
+    }
+  }
+
+  .ant-tag {
+    background-color: transparent;
+    margin-left: 0;
+    &.gray-tag {
+      color: #C8C8C8;
+      border-color: #C8C8C8;
+    }
+    &.orange-tag {
+      color: #F5A623;
+      border-color: #F5A623;
+    }
+    &.red-tag {
+      color: #FF5A5A;
+      border-color: #FF5A5A;
+    }
+    &.green-tag {
+      color: #60B304;
+      border-color: #60B304;
+    }
+    &.blue-tag {
+      color: #1890FF;
+      border-color: #1890FF;
+    }
+  }
+  .new-tooltip{
+    margin-left: -52px;
+    margin-top: 3px;
+  }
+}
+
+.post-item-date {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 140%;
+  span {
+    font-size: 12px;
+  }
+
+  .post-item-icon {
+    display: inline-flex;
+    margin-left: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #EC3E36;
+
+    Tooltip {
+      width: 220px;
+    }
+
+    .post-item-icon-info {
+      margin-right: 5px;
+      width: 12px;
+      height: 12px;
+      align-self: center;
+    }
+    div {
+      display: inline;
+    }
+  }
+}
+
+.op-btn-list {
+  display: flex;
+  flex-direction: row;
+
+  .share-btn {
+    opacity: 0.5;
+  }
+}
+
+.post-item-content {
+  padding-left: 32px;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  
+  button.title {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+
+  h3 {
+    display: block;
+    max-height: 2.2em;
+    line-height: 1.1;
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    -webkit-line-clamp: 2;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.og .post-item-content {
+  .header, .subtitle {
+    overflow: hidden;
+    margin-top: 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  a.subtitle {
+    display: block;
+    color: $color-link;
+    margin-top: 0;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+}
+
+.post-item-stats {
+  display: flex;
+}
+
+.post-delete-comfirm {
+  .ant-modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .comfirm-btns {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  h3 {
+    text-align: center;
+  }
+  button {
+    width: 130px;
+    height: 40px;
+  }
+  .cancel-btn {
+    border: solid 1px $color-main;
+    color: $color-main;
+  }
+  .delete-btn:hover {
+    color: inherit;
+    border: solid 1px rgb(217, 217, 217);
+  }
+}
+
+.ant-dropdown.share-menu {
+  .ant-dropdown-menu {
+    top: -72px;
+    left: 44px;
+  }
+
+  .ant-dropdown-arrow {
+    top: -40px;
+    left: 40px;
+    transform: rotate(-45deg);
+  }
+
+  .ant-dropdown-menu-item {
+    font-size: 12px;
+    padding: 8px 15px 0 15px;
+
+    & > div {
+      position: relative;
+      padding: 0 12px 8px 40px;
+      img {
+        position: absolute;
+        top: 3px;
+        left: 12px;
+      }
+    }
+    &:not(:last-child) > div {
+      border-bottom: 1px solid #f1f1f1;
+    }
+  }
+}

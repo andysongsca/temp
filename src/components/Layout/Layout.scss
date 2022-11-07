@@ -1,0 +1,25 @@
+#Layout {
+    position: relative;
+    min-width: 1024px;
+    height: 100%;
+}
+
+.Webview-Body {
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+    #Layout {
+        min-width: 0;
+    }
+}
+
+#Layout-Container {
+    position: relative;
+    //height: calc(100% - 60px);
+}
+
+.Notification-affix {
+    .ant-affix {
+        z-index: 20;
+    }
+}

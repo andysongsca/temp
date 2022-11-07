@@ -1,0 +1,32 @@
+@import 'asset/style/variable.scss';
+
+.creator-header {
+  display: inline-flex;
+    flex-flow: wrap;
+    padding-bottom: 18px;
+
+  .creator-h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    align-self: center;
+  }
+
+  .creator-info-icon {
+    margin-left: 5px;
+    height: 14px;
+    width: 14px;
+    margin-right: 5px;
+    align-self: center;
+  }
+}
+
+
+
+.creator-panel {
+  display: flex;
+  flex-wrap: wrap;
+}
+

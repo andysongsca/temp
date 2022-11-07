@@ -1,0 +1,26 @@
+.Unsubscribe-body {
+    .text-area {
+        margin-top:30px;
+        text-align: center;
+        font-size: 16pt;
+    }
+
+    .common-header__logo-wrapper{
+        display: block;
+        text-align: center;
+        margin-top:100px;
+
+        .checkbox-content {
+            flex-direction: column;
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .update-button {
+            display: inline;
+            width: 120px;
+            height: 40px;
+        }
+    }
+}

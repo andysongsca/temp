@@ -1,0 +1,50 @@
+.home-notify {
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px 34px;
+  border-radius: 4px;
+  border: solid 1px #f2f2f2;
+
+  h3 {
+    border-bottom: solid 2px #f2f2f2;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+  }
+  .notify-item {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+    div {
+      margin-left: 10px;
+      color: #656565;
+      font-size: 14px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.notify-box {
+  .ant-modal-header {
+    text-align: center;
+    margin: 0 54px;
+    padding-top: 66px;
+    padding-bottom: 16px;
+  }
+  .ant-modal-body {
+    padding: 24px 66px 54px 54px;
+  }
+  .got-it {
+    margin-top: 30px;
+  }
+  .ant-modal-title {
+    font-size: 22px;
+  }
+}
+.notify-box-content {
+  font-family: inherit;
+  white-space: pre-wrap;
+  font-size: 16px;
+  line-height: 1.94;
+  color: #656565;
+}

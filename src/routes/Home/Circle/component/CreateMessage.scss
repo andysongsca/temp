@@ -1,0 +1,80 @@
+@import 'asset/style/variable.scss';
+
+.create-message {
+  display: flex;
+
+  .creator-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: 17px 17px;
+  }
+
+  .create-message-detail {
+    margin: 21px 17px 0 7px;
+    width: 100%;
+
+    .create-message-info {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.31px;
+    }
+  }
+
+  .create-message-footer {
+    display: flex;
+
+    .create-message-image {
+      width: auto;
+
+      .ant-upload.ant-upload-select-picture-card {
+        border: none;
+        background-color: white;
+      }
+
+      .ant-upload-list-picture-card-container {
+        height: 168px;
+        width: 280px;
+        margin: 0;
+      }
+
+      .ant-upload-list-picture-card .ant-upload-list-item {
+        padding: 0;
+        border: none;
+      }
+
+      .create-message-upload {
+        display: flex;
+        padding: 8px 16px;
+        background-color: #f2f2f2;
+
+        .creator-info-location-icon {
+          width: 18.5px;
+          height: 14.5px;
+        }
+
+        .create-message-upload-text {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          color: #656565;
+          align-self: center;
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .create-message-button {
+      right: 25px;
+      position: absolute;
+      width: 120px;
+      height: 40px;
+    }
+  }
+}
+
+

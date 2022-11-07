@@ -1,0 +1,286 @@
+.Editor-Content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+    border-top: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    overflow: auto;
+
+    > p, > div, h2, h3, figure, blockquote, div[data-block=true] {
+        margin-bottom: 25px;
+    }
+    a {
+        text-decoration: underline;
+    }
+    img {
+        width: 60% !important;
+        display: block;
+        margin: 0 auto;
+    }
+    h2, h3 {
+        font-weight: 700;
+        word-break: break-word;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.33em;
+    }
+    blockquote {
+        font-style: italic;
+        border-left: 2px solid #FF5A5A;
+        position: relative;
+        padding: 16px 16px 16px 30px;
+        background-color: #F5F5F5;
+        &::before {
+            content: "\"";
+            font-size: 2em;
+            color: #FF5A5A;
+            position: absolute;
+            left: 4px;
+            top: -4px;
+        }
+    }
+    .NewsletterCard {
+        img {
+            width: 100% !important;
+        }
+    }
+    .img-wrapper {
+        div {
+            margin-top: 6px;
+            > span {
+                font-size: 14px;
+                line-height: 20px;
+                &.img-caption {
+                    color: rgba(0, 0, 0, 0.6);
+                    margin-right: 5px;
+                }
+                &.img-credit {
+                    color: #9B9B9B;
+                }
+            }
+        }
+    }
+}
+.public-DraftEditor-content {
+  min-height: 420px;
+}
+
+.Editor-hidePlaceholder .public-DraftEditorPlaceholder-root {
+  display: none;
+}
+
+#Editor-Pop {
+    position: relative;
+}
+
+.editor-status-bar {
+    font-size: 12px;
+    line-height: 14px;
+    color: #9B9B9B;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .editor-last-saved {
+        font-style: italic;
+    }
+}
+
+.edit-mask {
+    position: absolute;
+    background: rgba(36, 36, 36, 0.5);
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Editor-Content .error {
+    padding: 8px 16px 10px 48px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #FFEFEF;
+    background-image: url(../../../../../asset/svg/error.svg);
+    background-repeat: no-repeat;
+    background-position: 16px 16px;
+    box-shadow: inset 4px 0px 0px #D2010B;
+    position: relative;
+    transition: height 0.3s;
+    overflow: hidden;
+    font-size: 16px;
+    div {
+      line-height: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 2px;
+      margin-left: 8px;
+    }
+    span {
+        margin-left: 16px;
+    }
+    p {  
+        margin-left: 8px;
+        margin-bottom: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    li {
+        margin-left: 18px;
+    }
+}
+
+.Editor-Content .warning {
+    padding: 8px 16px 10px 48px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: rgba(245, 166, 35, 0.16);
+    background-image: url(../../../../../asset/svg/warning.svg);
+    background-repeat: no-repeat;
+    background-position: 16px 16px;
+    box-shadow: inset 4px 0px 0px #F5A623;
+    position: relative;
+    transition: height 0.3s;
+    overflow: hidden;
+    font-size: 16px;
+    div {
+      line-height: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 2px;
+      margin-left: 8px;
+    }
+    span {
+        margin-left: 16px;
+    }
+    p {  
+        margin-left: 8px;
+        margin-bottom: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    li {
+        margin-left: 18px;
+    }
+   
+    .dismiss {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      cursor: pointer;
+    }
+    &.dismissed {
+      height: 0;
+      margin-bottom: 0;
+    }
+    svg {
+      margin-left: 5px;
+    }
+  }
+
+  .Editor-Content .grammarly {
+    padding: 8px 16px 10px 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #C2F4DF;
+    background-repeat: no-repeat;
+    background-position: 16px 16px;
+    box-shadow: inset 4px 0px 0px #13D383;
+    position: relative;
+    transition: height 0.3s;
+    overflow: hidden;
+    font-size: 16px;
+    
+    span {
+        margin-left: 16px;
+    }
+    p {  
+        margin-left: 8px;
+        margin-top: 5px;
+        margin-bottom: 0;
+        line-height: 24px;
+        font-family: Roboto;
+        color: #242424
+    }
+    .grammarly-middle {
+        display: inline-block;
+        width: 90%;
+        margin-left: 25px;
+        .grammarly-desc {
+            &.hideGrammarly {
+                text-decoration: line-through;
+            }
+        }
+    }
+    .grammarly-right {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+
+        button {
+            background: none;
+            border:none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+
+            .grammarly-close {
+                width: 100% !important;
+                margin-top: 10px;
+            }
+        }
+
+    }
+    .grammarly-check .ant-checkbox-inner{
+        height: 25px;
+        width: 25px;
+        background-color: #13D383;
+        border-color: #13D383;
+    }
+
+    .ant-checkbox-checked::after {
+        border: 0px; 
+    }
+
+    .grammarly-title  {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #242424;
+        &.hideGrammarly {
+            text-decoration: line-through;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+   
+    .dismiss {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      cursor: pointer;
+    }
+    &.dismissed {
+      height: 0;
+      margin-bottom: 0;
+    }
+    svg {
+      margin-left: 5px;
+    }
+  }
+  

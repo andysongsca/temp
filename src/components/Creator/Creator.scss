@@ -1,0 +1,184 @@
+.welcome-modal {
+    .ant-modal-content {
+        padding: 0;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+    }
+    .ant-modal-body {
+        color: #242424;
+        text-align: center;
+        padding: 0;
+
+        h3 {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: bold;
+            color: #242424;
+            margin-bottom: 18px;
+        }
+        p {
+            margin: 0 36px 26px 36px;
+        }
+    }
+    .ant-modal-footer {
+        text-align: center;
+        padding: 20px 0 58px 0;
+        border-top: none;
+
+        button {
+            padding: 8px 28px 10px 28px;
+            border-radius: 38px;
+            height: 36px;
+            line-height: 18px;
+            font-weight: 500;
+        }
+    }
+    .banner {
+        height: 336px;
+        width: 100%;
+        background-image:  url('../../asset/img/hi-publisher.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &.creator {
+        .banner {
+            background-image: url('../../asset/img/hi-creator.png');
+        }
+    }
+}
+
+.creator-share-modal {
+    .ant-modal-content {
+        padding: 0;
+        height: 576px;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        background-image: url('../../asset/img/share-popup-bg.png');
+        background-position: 516px 60px;
+        background-repeat: no-repeat;
+    }
+    .ant-modal-body {
+        color: #242424;
+        padding: 0;
+        position: relative;
+        p {
+            margin: 0;
+        }
+    }
+    .ant-modal-footer {
+        display: none;
+    }
+    .ant-carousel {
+        padding: 35px 0 0 57px;
+        .slick-dots-top {
+            top: 0;
+            left: 0;
+            text-align: left;
+            height: 6px;
+            li {
+                width: 48px;
+                button {
+                    width: 100%;
+                    height: 6px;
+                    margin-right: 10px;
+                    background-color: #dcdcdc;
+                    border-radius: 6px;
+                }
+                &.slick-active {
+                    width: 48px;
+                    button {
+                        background-color: #242424;
+                    }
+                }
+            }
+        }
+    }
+    .tab {
+        display: flex;
+    }
+    .left-panel {
+        width: 395px;
+        margin-top: 35px;
+        padding-right: 55px;
+        background-position: -20px bottom;
+        background-repeat: no-repeat;
+        &.reader-referral {
+            height: 482px;
+            background-image: url('../../asset/img/share-app-bg.png');
+        }
+        &.creator-referral {
+            height: 500px;
+            background-size: 394px;
+            background-image: url('../../asset/img/hi-creator.png');
+        }
+        h1 {
+            font-size: 36px;
+            line-height: 48px;
+            font-weight: 700;
+            color: #242424;
+            margin-bottom: 18px;
+        }
+    }
+    .sep-line {
+        height: 455px;
+        width: 2px;
+        margin-top: 45px;
+        background-color: #242424;
+    }
+    .right-panel {
+        flex-grow: 1;
+        padding-top: 65px;
+        padding-left: 62px;
+        h2 {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+        }
+        ul {
+            padding: 0 0 10px 0;
+            overflow: auto;
+            li {
+                width: 48px;
+                height: 48px;
+                list-style: none;
+                float: left;
+                margin-right: 35px;
+                cursor: pointer;
+            }
+        }
+        .share-link-sep {
+            width: 380px;
+            height: 28px;
+            margin: 56px 0;
+            background-image: url('../../asset/img/share-link-sep.png');
+            background-position: center;
+        }
+        .ant-input-group-wrapper {
+            margin: 3px 0;
+        }
+        .ant-input-search {
+            width: 305px;
+            height: 36px;
+            input {
+                padding-left: 36px;
+                border: 1px solid #f7f7f7;
+                background-color: #f7f7f7;
+                &::selection {
+                    background-color: #242424;
+                }
+                &:focus, &:hover {
+                    border-color: #f7f7f7;
+                    box-shadow: none;
+                }
+            }
+            .ant-btn {
+                height: 36px;
+                background-color: #242424;
+                border-color: #242424;
+            }
+        }
+        .hint {
+            font-size: 12px;
+            color: #656565;
+        }
+    }
+}

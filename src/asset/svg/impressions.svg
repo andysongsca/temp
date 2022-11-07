@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>impression</title>
+    <desc>Created with Sketch.</desc>
+    <g id="impression" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(2.000000, 7.000000)" fill-rule="nonzero" stroke="currentColor" stroke-width="3">
+            <path d="M17.5,24.2307692 C23.9433221,24.2307692 29.7766554,20.1923077 35,12.1153846 C29.7766554,4.03846154 23.9433221,0 17.5,0 C11.0566779,0 5.22334459,4.03846154 0,12.1153846 C5.22334459,20.1923077 11.0566779,24.2307692 17.5,24.2307692 Z" id="Oval"></path>
+            <circle id="Oval" cx="17.5" cy="12.1153846" r="6.73076923"></circle>
+        </g>
+    </g>
+</svg>

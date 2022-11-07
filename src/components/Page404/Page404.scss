@@ -1,0 +1,24 @@
+@import 'asset/style/variable.scss';
+
+.Page404 {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+
+    .img {
+        width: 170px;
+        margin-top: 200px;
+    }
+
+    h1 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .text {
+        margin-top: 34px;
+        font-size: 16px;
+        color: $font-color-light;
+        line-height: 24px;
+    }
+}

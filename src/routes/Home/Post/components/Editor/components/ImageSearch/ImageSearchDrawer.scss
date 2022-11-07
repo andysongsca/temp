@@ -1,0 +1,72 @@
+.ImageSearchDrawer {
+  height: 100%;
+  overflow: hidden;
+
+  &-back {
+    &-wrapper {
+      min-height: 30px;
+      display: flex;
+      align-items: center;
+      margin-left: 24px;
+    }
+    &-btn {
+      display: flex;
+      align-items: center;
+      margin-left: -10px;
+
+      font-size: 12px;
+    }
+    &-btn-icon {
+      height: 15px;
+    }
+  }
+
+  .SelectMethod {
+    padding: 20px;
+
+    &-icon {
+      height: 100px;
+      width: 100px;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .SelectMethodItem {
+      background: #fff;
+      margin-bottom: 40px;
+
+      &-wrapper {
+        width: 80%;
+        min-height: 200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        padding: 20px 0;
+
+        > span {
+          border: 2px solid #f2f2f2;
+          text-align: center;
+          border-radius: 38px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 18px;
+          padding: 9px 28px;
+          min-width: 200px;
+        }
+      }
+
+      &-icon {
+        min-height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

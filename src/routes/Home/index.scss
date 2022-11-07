@@ -1,0 +1,216 @@
+@import 'asset/style/variable.scss';
+
+.Home-Container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: $main-width;
+    padding-top: 13px;
+}
+
+.Home-Sider {
+    width: 260px;
+    margin-right: 13px;
+    flex-shrink: 0;
+}
+
+.Home-Content {
+    flex-grow: 1;
+    padding-bottom: 16px;
+    width: calc(100% - 233px);
+
+    .section {
+        border-radius: 4px;
+        color: #242424;
+        border: solid 1px #f2f2f2;
+        background-color: white;
+        padding: 28px;
+        margin-bottom: 10px;
+        position: relative;
+
+        .section-title-xl {
+            font-weight: bold;
+            font-size: 28px;
+            color: #242424;
+            line-height: 33px;
+        }
+
+        .section-title-lg {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.5px;
+            color: #242424;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+    }
+}
+
+.Home-Nav {
+    margin: 0 20px 0 12px;
+    padding: 0;
+    font-size: 16px;
+
+    li {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        line-height: 62px;
+        margin: 0;
+        padding-left: 18px;
+        list-style: none;
+
+        + li {
+            border-top: 1px solid #f2f2f2;
+        }
+    }
+
+    .no-icon {
+        padding-left: 24px;
+    }
+
+    a {
+        color: #4a4a4a;
+        text-decoration: none;
+    }
+
+    .active {
+        span {
+            color: $color-main;
+        }
+    }
+
+    .Home-NavItem-Header {
+        .Home-Nav {
+            margin: 0;
+            width: 100%;
+        }
+        .Home-NavItem:first-child {
+            padding-left: 0;
+            cursor: pointer;
+        }
+        .Home-NavItem:not(:first-child) {
+            display: none;
+        }
+        &.expanded {
+            .Home-NavItem {
+                display: flex;
+            }
+        }
+        .secondary {
+            margin-left: 24px;
+        }
+        .toggle-arrow {
+            margin: 0 auto;
+            width: 12px;
+            height: 12px;
+            border-right: 2px solid #656565;
+            border-bottom: 2px solid #656565;
+            transform: rotate(45deg);
+            transition: all 0.3s;
+            cursor: pointer;
+            &.up {
+              transform: rotate(-135deg);
+            }
+        }
+        .active {
+            .toggle-arrow {
+                border-color: $color-main;
+            }
+        }
+    }
+
+    .Home-NavItem {
+        a {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 6px;
+            width: 18px;
+            height: 18px;
+            border-radius: 100px;
+            background-color: #f2f2f2;
+            color: #C8C8C8;
+
+            svg {
+                display: block;
+            }
+        }
+        .svg-active {
+          display: none !important;
+        }
+
+        &.active {
+            svg {
+                fill: $color-main;
+            }
+            .icon {
+                background-color: $color-main;
+                color: #fff;
+            }
+            .svg-fill {
+              fill: currentColor;
+            }
+            .svg-noactive {
+              display: none;
+            }
+            .svg-active {
+              display: block !important;
+            }
+        }
+    }
+}
+
+.congrats-modal {
+    .ant-modal-body {
+        padding: 4px;
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    .ant-modal-footer {
+        border-top: none;
+    }
+    .profile-link {
+        color: #242424;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+.ant-modal-confirm.confirm-agreement {
+    .ant-modal-content {
+        padding: 0;
+    }
+    .ant-modal-confirm-content {
+        color: #242424;
+    }
+    .ant-modal-confirm-btns {
+        display: flex;
+        justify-content: center;
+        float: none;
+        .ant-btn {
+            padding: 17px 28px 17px 28px;
+            margin: 0 12px;
+            border-radius: 38px;
+            height: unset;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 500;
+            text-shadow: none;
+            box-shadow: none;
+            &:first-child {
+              color: #242424;
+            }
+        }
+    }
+}

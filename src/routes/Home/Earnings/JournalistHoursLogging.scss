@@ -1,0 +1,50 @@
+.journalist-hours {
+  border-radius: 4px;
+  background-color: white;
+  background-repeat: no-repeat;
+  flex-direction: row;
+  padding-left: 150px;
+  min-height: 600px;
+  
+  
+
+  .title {
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 5px 0 12px 0;
+    font-family: Roboto;
+    font-style: normal;
+    color: #242424;
+    display: inline-block;
+  }
+
+  .journalist-datepicker {
+    align-items: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .input-area {
+    margin-top: 20px;
+    display: inline;
+    .hours-text {
+      max-width: 30%;
+    }
+  }
+
+  .past-submissions {
+    margin-top:30px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .error-msg {
+    color: #ff4d4f;
+  }
+
+  .past-submission-table {
+    width: 80%;
+  }
+}

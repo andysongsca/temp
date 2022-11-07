@@ -1,0 +1,182 @@
+@import 'asset/style/variable.scss';
+
+.message-item {
+  display: flex;
+  min-height: 215px;
+  width: 878px;
+  border: solid 1px #f2f2f2;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+
+  .message-item-content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 0 24px;
+    margin-bottom: 5px;
+    position: relative;
+
+    .message-item-date {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: #656565;
+    }
+
+    .message-item-title {
+      padding: 16px 0 50px;
+      display: flex;
+
+      .message-item-image {
+        img {
+          width: 130px;
+          height: 100px;
+          object-fit: cover;
+          margin-right: 24px;
+        }
+      }
+
+      .message-item-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.31px;
+      }
+
+      .message-item-text-small {
+        width: 500px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.31px;
+
+        .message-item-default-message {
+          font-style: italic;
+        }
+      }
+
+      .message-item-article {
+        position: absolute;
+        display: flex;
+        width: 320px;
+        height: 97px;
+        right: 24px;
+
+        .message-item-image {
+          width: 97px;
+          
+          img {
+            width: 97px;
+            height: 97px;
+          }
+
+          .message-item-tag {
+            font-weight: 400;
+            color: white;
+            background-color: #000000;
+            position: absolute;
+            top: 6px;
+            left: 8px;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 3px;
+            opacity: 0.8;
+          }
+        }
+
+        .message-item-topic {
+          background-color: #F2F2F2;
+          width: 265px;
+
+          .message-item-tag {
+            background-color: transparent;
+            margin-left: 12px;
+            margin-top: 6px;
+            color: #60B304;
+            border-color: #60B304;
+          }
+
+          .message-item-head {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.31px;
+            max-height: 80px;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+
+            .message-head-with-tag {
+              margin: 4px 12px;
+            }
+
+            .meesage-head-without-tag {
+              margin: 20px 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .message-item-icon {
+      width: 830px;
+
+      .message-item-icon-left {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .message-item-icon-right {
+        display: flex;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 6px;
+        right: 24px;
+
+        .message-item-icon-detail {
+          display: flex;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+          height: 24px;
+          width: 97px;
+          justify-content: center;
+          align-self: center;
+
+          .message-detail-icon {
+            width: 18.5px;
+            height: 12px; 
+            color: #FF5A5A;
+            align-self: center;
+          }
+
+          .message-detail-num {
+            height: 20px;
+            align-self: center;
+            margin-left: 8px;
+          }
+        }
+
+        .message-detail-sep {
+          width: 1px;
+          height: 19px;
+          border: 1px solid #f2f2f2;
+          align-self: center;
+          margin: 0 9px;
+        }
+      }
+    }
+  }
+}

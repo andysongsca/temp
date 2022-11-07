@@ -1,0 +1,20 @@
+.nb-tooltip {
+  :global(.ant-tooltip-inner) {
+    width: 220px;
+    color: #656565;
+    font-size: 12px;
+    padding: 14px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.13);
+    a {
+      color: #656565;
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+  }
+  &.auto-width :global(.ant-tooltip-inner) {
+    width: auto;
+  }
+}

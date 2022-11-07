@@ -1,0 +1,25 @@
+.cursor-pop {
+  background: white;
+  z-index: 10;
+  box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.14);
+  position: absolute;
+  .triangle {
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    &.below {
+      top: -10px;
+      border-bottom: 10px solid #fff;
+      &.sa {
+        border-bottom-color: rgba(0,0,0,.2);
+      }
+    }
+    &.up {
+      bottom: -10px;
+      border-top: 10px solid #fff;
+      &.sa {
+        border-top-color: rgba(0,0,0,.2);
+      }
+    }
+  }
+}

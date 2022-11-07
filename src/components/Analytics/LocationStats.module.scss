@@ -1,0 +1,36 @@
+.location-stats {
+  .time-line {
+    color: #656565;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .no-data {
+    margin-top: 28px;
+  }
+  .locations {
+    margin-top: 18px;
+  }
+  .location-item {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    .bar-container {
+      width: 500px;
+      height: 8px;
+      background-color: #f2f2f2;
+      border-radius: 22px;
+      overflow: hidden;
+      .bar {
+        height: 100%;
+        background-color: #FF5A5A;
+        float: left;
+        border-radius: 11px;
+      }
+    }
+    .value {
+      margin: 0 28px;
+      width: 48px;
+      text-align: right;
+    }
+  }
+}
